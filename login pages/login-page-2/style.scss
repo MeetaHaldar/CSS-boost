@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin-top: 0;
+}
+body {
+  overflow-x: hidden;
+  color: white;
+  font-family: "Montserrat", sans-serif !important;
+}
+.navbar-brand {
+  color: #222;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px !important;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+// .bg-mine {
+//   background-color: rgb(253, 174, 121);
+// }
+
+.icon:hover {
+  color: rgb(247, 226, 109) !important;
+}
+
+.rc {
+  border-radius: 35px;
+}
+.fb-color {
+  background-color: #1877f2 !important;
+  border: none !important;
+}
+.gb-color {
+  background-color: #cd201f !important;
+  border: none !important;
+}
+.lb-color {
+  background-color: #0a66c2 !important;
+  border: none !important;
+}
+.bc {
+  border-radius: 50% !important;
+}
+footer {
+  bottom: 0;
+}
+button:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            text-align: center;
+            
+        }
+        body{
+            background-color: khaki;
+        }
+        
+         .container{
+             width: 700px;
+             text-align: center;
+             margin: auto;
+             background-color: rgb(145, 219, 145);
+             padding: 60px;
+         }
+
+
+      .list1 {
+        width: 90px;
+        list-style-type: none;
+        color:black;
+        background: blueviolet;
+        position: relative;
+        padding: 15px;
+        cursor: pointer;
+      }
+      .list2 {
+        list-style: none;
+        width: 80px;
+        left: 50px;
+        background-color: rgb(116, 42, 165);
+        position: absolute;
+        display: none;
+        padding: 15px;
+        cursor: pointer;
+      }
+      .list3 {
+        list-style: none;
+        width: 80px;
+        background-color: rgb(89, 103, 230);
+        color: black;
+        position: absolute;
+        left:70px;
+        display: none;
+        animation: 2s  ;
+      }
+
+      .bok {
+     list-style-type: none;
+      }
+
+      .list1:hover {
+        background-color: coral;
+      }
+      .list1:hover .list2 {
+        display: block;
+      }
+      .list2 li:hover {
+        background-color: darkgrey;
+       
+      }
+      .bok:hover .list3 {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="container">
+    <ul class="list1">
+      <li>ITEMS</li>
+      <li>
+        <ul class="list2">
+          <li>TEA</li>
+          <li class="bok">
+            COCK
+            <ul class="list3">
+              <li>kiki</li>
+              <li>kuku</li>
+              <li>opopo</li>
+            </ul>
+          </li>
+          <li>COFFEE</li>
+        </ul>
+      </li>
+    </ul>
+</div>
+  </body>
+</html>

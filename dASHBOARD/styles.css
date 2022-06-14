@@ -1,0 +1,380 @@
+body {
+padding-bottom: 30px;
+position: relative;
+min-height: 100%;
+}
+
+a {
+transition: background 0.2s, color 0.2s;
+}
+
+a:hover,
+a:focus {
+text-decoration: none;
+}
+
+#wrapper {
+padding-left: 0;
+transition: all 0.5s ease;
+position: relative;
+}
+
+#sidebar-wrapper {
+z-index: 1000;
+position: fixed;
+left: 250px;
+width: 0;
+height: 100%;
+margin-left: -250px;
+overflow-y: auto;
+overflow-x: hidden;
+background: #FC5404;
+transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+width: 250px;
+}
+
+.sidebar-brand {
+position: absolute;
+top: 0;
+width: 250px;
+text-align: center;
+padding: 20px 0;
+}
+
+.sidebar-brand h2 {
+margin: 0;
+font-weight: 600;
+font-size: 24px;
+color: #A9F1DF;
+}
+
+.sidebar-nav {
+position: absolute;
+top: 75px;
+width: 250px;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.sidebar-nav>li {
+text-indent: 10px;
+line-height: 42px;
+}
+
+.sidebar-nav>li a {
+display: block;
+text-decoration: none;
+color: #A9F1DF;
+font-weight: 600;
+font-size: 18px;
+}
+
+.sidebar-nav>li>a:hover,
+.sidebar-nav>li.active>a {
+text-decoration: none;
+color: #fff;
+background: #F98404;
+}
+
+.sidebar-nav>li>a i.fa {
+font-size: 24px;
+width: 60px;
+}
+
+.sidebar-nav>li>a i.fas {
+font-size: 24px;
+width: 60px;
+}
+
+#navbar-wrapper {
+width: 100%;
+position: absolute;
+z-index: 2;
+}
+
+#wrapper.toggled #navbar-wrapper {
+position: absolute;
+margin-right: -250px;
+}
+
+#navbar-wrapper .navbar {
+border-width: 0 0 0 0;
+background-color: #eee;
+font-size: 24px;
+margin-bottom: 0;
+border-radius: 0;
+}
+
+#navbar-wrapper .navbar a {
+color: #FC5404;
+}
+
+#navbar-wrapper .navbar a:hover {
+color: #F98404;
+}
+
+.logout-button {
+background-color: #FC5404;
+border: #FC5404;
+}
+
+.logout-button:hover {
+background-color: #F98404;
+}
+
+#content-wrapper {
+width: 100%;
+position: absolute;
+padding: 15px;
+top: 100px;
+}
+
+#wrapper.toggled #content-wrapper {
+position: absolute;
+margin-right: -250px;
+}
+
+@media (min-width: 992px) {
+#wrapper {
+    padding-left: 250px;
+}
+#wrapper.toggled {
+    padding-left: 60px;
+}
+#sidebar-wrapper {
+    width: 250px;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 60px;
+}
+#wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -190px;
+}
+#wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -190px;
+}
+#navbar-wrapper {
+    position: relative;
+}
+#wrapper.toggled {
+    padding-left: 60px;
+}
+#content-wrapper {
+    position: relative;
+    top: 0;
+}
+#wrapper.toggled #navbar-wrapper,
+#wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 60px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+#wrapper {
+    padding-left: 60px;
+}
+#sidebar-wrapper {
+    width: 60px;
+}
+#wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#navbar-wrapper {
+    position: relative;
+}
+#wrapper.toggled {
+    padding-left: 250px;
+}
+#content-wrapper {
+    position: relative;
+    top: 0;
+}
+#wrapper.toggled #navbar-wrapper,
+#wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 250px;
+}
+}
+
+@media (max-width: 767px) {
+#wrapper {
+    padding-left: 0;
+}
+#sidebar-wrapper {
+    width: 0;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+#wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#navbar-wrapper {
+    position: relative;
+}
+#wrapper.toggled {
+    padding-left: 250px;
+}
+#content-wrapper {
+    position: relative;
+    top: 0;
+}
+#wrapper.toggled #navbar-wrapper,
+#wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 250px;
+}
+}
+
+.welcome {
+margin-right: 3rem;
+/* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+}
+
+.upload {
+padding: 3.5rem;
+}
+
+.fa-plus-square {
+font-size: 50px;
+width: 60px;
+align-items: center;
+}
+
+.circle-frame {
+height: auto;
+border-radius: 50%;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+flex: 0 0 25%;
+background-color: #f1f1f1;
+text-align: center;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+}
+/* @media screen (max-width:767px) {
+#circle-frame.circle-frame {
+    min-width: 100%;
+    height: auto;
+    padding-top: 50%;
+}
+}
+*/
+
+
+
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+.detail {
+margin-top: 2.5rem;
+}
+
+.detail-head {
+font-size: 2.5rem;
+}
+
+.cards-list {
+z-index: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.card {
+margin: 30px auto;
+width: 300px;
+height: 300px;
+border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+cursor: pointer;
+transition: 0.4s;
+}
+
+.card .card_image {
+width: inherit;
+height: inherit;
+border-radius: 40px;
+}
+
+.card .card_image img {
+width: inherit;
+height: inherit;
+border-radius: 40px;
+object-fit: cover;
+}
+
+.card .card_title {
+text-align: center;
+border-radius: 0px 0px 40px 40px;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 30px;
+margin-top: -80px;
+height: 40px;
+}
+
+.card:hover {
+transform: scale(0.9, 0.9);
+box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+color: white;
+}
+
+.title-black {
+color: black;
+}
+
+@media all and (max-width: 500px) {
+.card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+}
+}
+
+
+/*
+.card {
+margin: 30px auto;
+width: 300px;
+height: 300px;
+border-radius: 40px;
+background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+transition: 0.4s;
+}
+*/

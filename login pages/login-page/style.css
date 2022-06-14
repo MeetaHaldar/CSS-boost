@@ -1,0 +1,37 @@
+.my-form {
+    width: 30%;
+
+}
+input{
+    outline: none
+    ;
+}
+.my-attendance{
+    height:60vh;
+}
+@media (max-width:1140px) {
+
+    .my-form {
+    width: 40%;
+
+}
+
+}
+
+@media (max-width:830px) {
+
+    .my-form {
+    width: 60%;
+
+}
+
+}
+
+@media (max-width:501px) {
+
+    .my-form {
+    width: 70%;
+
+}
+
+}
