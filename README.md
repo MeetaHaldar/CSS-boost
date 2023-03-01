@@ -1,7 +1,7 @@
 
 # CSS-boost 🎨
 
-## tech use
+## tech use 🛠
 - HTML
 - CSS
 - JS
